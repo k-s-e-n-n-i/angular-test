@@ -1,0 +1,9 @@
+<input [(ngModel)]="user.name" />
+
+<button (click)="add()">жмяк</button>
+<p>{{ test }}</p>
+<ng-container *ngIf="users.length">
+  <div *ngFor="let name of users">
+    <hi [name]="name"></hi>
+  </div>
+</ng-container>

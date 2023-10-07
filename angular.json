@@ -5,7 +5,9 @@
   "projects": {
     "todo": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "style": "scss"
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -25,9 +27,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules/"]
+            }
           },
           "configurations": {
             "production": {
@@ -87,9 +93,13 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [],
+            "inlineStyleLanguage": "scss",
+            "stylePreprocessorOptions": {
+              "includePaths": ["node_modules/"]
+            }
           }
         }
       }
